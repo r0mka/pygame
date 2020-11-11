@@ -8,6 +8,7 @@ HERO_DIM = HERO_WIDTH, HERO_HEIGHT = 50, 100
 
 
 win = pg.display.set_mode(WIN_DIM)
+pygame.display.set_caption("First Game")
 
 run = True
 
