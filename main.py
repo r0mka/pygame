@@ -42,7 +42,7 @@ while run:
         hero_pos[0] += hero_vel[0]
     if keys[pg.K_UP] and hero_pos[1] >= hero_vel[1]:
         hero_pos[1] -= hero_vel[1]
-    if keys[pg.K_DOWN]:
+    if keys[pg.K_DOWN] and hero_pos[1] + hero_vel[1] <= WIN_HEIGHT - HERO_HEIGHT:
         hero_pos[1] += hero_vel[1]
     
     if not isJump:
